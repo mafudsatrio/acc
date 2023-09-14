@@ -9,6 +9,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root{
+  --background-service: #F5F5F5;
+
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -37,6 +41,19 @@ h6 {
   margin-top: 70px;
   z-index: 3;
   position: relative;
+}
+.row{
+  background: var(--background-service);
+  padding: 20px;
+}
+.row-footer{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 
 /*--------------------------------------------------------------
@@ -457,6 +474,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding-bottom: 60px;
+  padding-top: 100px;
   overflow: hidden;
 }
 
@@ -532,6 +550,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
   background: #fff;
+  margin-bottom: 30px;
 }
 
 .about .count-box {
@@ -1266,8 +1285,11 @@ section {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
-
+.pricing h1{
+  margin-bottom: 30px;
+}
 .pricing h3 {
   font-weight: 400;
   margin: -20px -20px 20px -20px;
@@ -1302,13 +1324,17 @@ section {
   padding: 0;
   list-style: none;
   color: #444444;
-  text-align: center;
+  text-align: left;
   line-height: 20px;
   font-size: 14px;
 }
 
 .pricing ul li {
   padding-bottom: 16px;
+  max-width: 100ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .pricing ul i {
