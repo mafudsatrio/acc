@@ -1,0 +1,14 @@
+* {
+    font-family: Inter !important;
+}
+
+:root {
+    --background-primary: #FFF;
+    --primary-surface: #E2EBE1;
+    --primary-main: #227519;
+    --primary-secondary: #6A9F5F;
+    --neutral-100: #0A0A0A; 
+    --hero-h1: 40px;
+    --space-between: 20px;
+}
+
